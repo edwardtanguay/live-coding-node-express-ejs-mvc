@@ -20,6 +20,10 @@ app.get('/nouns', (req, res) => {
     res.render('pages/nouns', siteData)
 });
 
+app.get('/books', (req, res) => {
+    res.render('pages/books', siteData)
+});
+
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`);
 });
