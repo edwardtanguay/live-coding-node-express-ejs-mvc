@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
     res.render('pages/index', siteData)
 });
 
+app.get('/nouns', (req, res) => {
+    res.render('pages/nouns', siteData)
+});
+
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`);
 });
