@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './public/views'));
 
 app.get('/', (req, res) => {
-    res.render('pages/index')
+    res.render('pages/index', siteData)
 });
 
 
